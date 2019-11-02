@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
+
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.logo{
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo img{
+    width: 140px;
+    height: 45px;
+}
+
+header{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header nav{
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+body{
+    margin: 0;
+}
+
+nav a{
+    padding: 1.5em 1em;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+nav a[href]:hover{
+    color: #1DB954;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float: left;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+#section1{
+    height: 580px;
+    background-color: rgb(80,155,245);
+    background-image: url("images/hero-image.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto 85%;
+}
+
+.clearfix::before{
+    content: '';
+    display: table;
+}
+
+#section1 small{
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+}
+
+#section1 .container{
+    height: 100%;
+    position: relative;
+}
+
+.vertically-centered{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.benefit{
+    float: left;
+    width: calc((100% - 60px) / 4);
+    margin-right: 20px;
+    text-align: center;
+}
+
+.benefit img{
+    width: 60%;
+}
+
+.benefit:last-child{
+    margin-right: 0px;
+}
+
+.container > h1{
+    text-align: center;
+}
+
+.offer{
+    float: left;
+    width: calc((100% - 40px) / 3);
+    margin-right: 20px;
+    padding: 15px;
+}
+
+.offer:last-child{
+    margin-right: 0px;
+}
+
+footer nav + div{
+    right: 15px;
+}
+
+footer nav + div a{
+    display: block;
+}
+
+.cta-button{
+    display: inline-block;
+    background-color: #1DB954;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 900px;
+}
+
+main > section{
+    padding: 35px 0;
+}
+
+.offer ul{
+    list-style: none;
+}
+
+.offer li{
+    position: relative;
+}
+
+.offer li::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("images/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+}
